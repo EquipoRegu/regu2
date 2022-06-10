@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="utf-8" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Practica 6</title>
+  </head>
+
+<body>
+    <h1 id="titulo"> Bienvenido</h1>
+    
+    <section>
+     <div class="Contenido"> 
+        <div class="equipo">
+          <h2 id="subtitulo"> Practica 6</h2>
+          <h1 id="subtitulo">Integrantes: <span class="input"></span></h1>
+          <p>
+            Plantilla
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <form id="inicio">
+        <input id="title" type="text">
+        <textarea id="usrs" rows="3"></textarea>
+        <button>Enviar</button>
+    </form>
+
+    <ul id="Usrs"></ul>
+    
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      var typed= new Typed(".input", {
+      strings:["Cipriano Mario.","Felix Jesús.","Gómez Alan."],
+      typeSpeed: 70,
+      backSpeed: 60,
+      loop:true
+      });
+    </script>
+    <script src="/socket.io/socket.io.js" charset="utf-8"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
