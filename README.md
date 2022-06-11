@@ -8,7 +8,7 @@ Si clonan el repositorio vuelvan a ejecutar el <b>"npm install"</b> para instala
 
 <ul>
   <li>Mario Tolentino Cipriano Camacho, 20211961.</li>
-  <li>Agregar nombre</li>
+  <li>Alan Iran Gomez Hernandez</li>
   <li>Agregar nombre</li>
   <li>Agregar nombre</li>
   <li>Agregar nombre</li>
