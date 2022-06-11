@@ -16,3 +16,5 @@ Si clonan el repositorio vuelvan a ejecutar el <b>"npm install"</b> para instala
   <li>Agregar nombre</li>
   <li>Agregar nombre</li>
 </ul>
+
+<b>Gracias por leer <3</b>
