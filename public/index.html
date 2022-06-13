@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <title>Regu2</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+  <!--Barra de navegacion-->
+  <nav class="nav navbar-dark bg-dark" id="nav">
+    <a href="/" class="nav navbar-brand mx-auto">Contenido.</a>
+  </nav>
+
+  <!--Formulario de acceso-->
+  <div class="card col-md-4 mx-auto mt-5" id="nick-wrap">
+    <div class="card-header">
+      <h4>Introduce tu nombre</h4>
+    </div>
+    <p id="nick-error"></p>
+    <div class="card-body">
+      <form id="nick-form">
+        <input type="text" id="nick-name" class="form-control">
+        <button type="submit" class="btn btn-success mt-3" id="nick-btn">Acceder</button>
+      </form>
+    </div>
+  </div>
+
+
+  <!--Contenedor general-->
+  <div class="container" id="content-wrap">
+    <div class="row">
+
+      <!--Info del proyecto-->
+      <div class="col-sm" id="c-contenido">
+        <div class="header">
+          <h4>Regularización</h4>
+        </div>
+      </div>
+
+      <div class="col-sm" id="col-usrchat">
+        <!--Usuarios-->
+        <div class="p-2 bd-highlight" id="c-usuarios">
+          <div class="card">
+            <div class="card-header">
+              <h4>Usuari@s</h4>
+              <div class="card-body">
+                <div class="overflow-auto" id="d-usuarios">
+                  <div id="usernames">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Chat-->
+        <div class="p-2 bd-highlight" id="c-chat">
+          <div class="card">
+            <div class="card-header">
+              <h4>Chat</h4>
+            </div>
+            <div class="overflow-auto" id="d-chat">
+              <div class="card-body" id="chat">
+              </div>
+            </div>
+            <form id="message-form" class="card-footer">
+              <div class="input-group">
+                <input class="form-control" type="text" id="message" maxlength="20">
+                <div class="input-group-append">
+                  <button class="btn btn-succes" type="submit">Enviar</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!--
+  <h1 id="titulo"> Bienvenido</h1>
+  <section>
+    <div class="Contenido">
+      <div class="equipo">
+        <h2 id="subtitulo"> Regu2</h2>
+        <h1 id="subtitulo">Integrantes: <span class="input"></span></h1>
+        <p>
+          Plantilla
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <form id="inicio">
+    <input id="title" type="text">
+    <textarea id="usrs" rows="3"></textarea>
+    <button>Enviar</button>
+  </form>
+
+  <ul id="Usrs"></ul>
+  
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    var typed = new Typed(".input", {
+      strings: ["Cipriano Mario.", "Gómez Alan.", "...", "...", "...", "..."],
+      typeSpeed: 70,
+      backSpeed: 60,
+      loop: true
+    });
+  </script>
+  -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="/socket.io/socket.io.js" charset="utf-8"></script>
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
