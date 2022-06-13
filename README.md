@@ -13,7 +13,7 @@ Si clonan el repositorio vuelvan a ejecutar el <b>"npm install"</b> para instala
   <li>Lizbeth Gómez Huizar, 1811548.</li>
   <li>Fernando Armenta velazquez, 20212712.</li>
   <li>Joel Muñoz Solis, 18210146.</li>
-  <li>Agregar nombre</li>
+  <li>María Teresa Gómez Alemón, 16212391</li>
   <li>Agregar nombre</li>
 </ul>
 
