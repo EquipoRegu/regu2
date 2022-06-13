@@ -7,10 +7,16 @@ body {
 
 }
 
+h4{font-size: calc(1em + 1vw) }
+
+#footer{/*Creo que no afecta, pero igual lo por si acaso*/
+  height: 70px;
+  width: 50%;
+}
+
 #nav {
   display: none;
 }
-
 
 /* No modificar 1*/
 #content-wrap {
@@ -18,18 +24,18 @@ body {
 }
 
 #d-usuarios {
-  height: 200px;
-  width: 100%;
+  height: 70px;
+  width: 50%;
 }
 
 #d-chat{
-  height: 200px;
-  width: 100%;
+  height: 100px;
+  width: 70%;
 }
 
 .msg {
   padding: top 10px;
-  padding: left 10px;
+  padding: left 50px;
 }
 
 .msg b {
