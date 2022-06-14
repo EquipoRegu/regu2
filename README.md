@@ -98,7 +98,7 @@ Si es la primera vez que se ejecuta el servidor es necesario hacer lo siguiente:
  
 # Cliente receptor 
 <div align="justify">
- El cliente receptor consta de varias páginas web en documentos html.
+ El cliente receptor consta de una página web en documento html.
  <ul>
   <li>La primera página a la que accedemos es <b>"index.html"</b> donde tenemos que hacer <i>login</i> con el nombre de usuario ingresado en el <b>"ClienteEmisor.py"</b>.<br>
  </ul>
