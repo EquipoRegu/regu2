@@ -7,7 +7,7 @@
 
 # Resumen 
 <div align="justify">
-</A><i>Por medio de hardware realizar acciones en una página web utilizando un servidor con WebSockets.</i>
+</A><i>Por medio de la conceccion de dos computadoras a una página web utilizando un servidor con WebSockets.</i>
 
 ![Sistema 1](https://github.com/EquipoDinamit/Examen3/blob/main/imagenes/indicaciones.png "Diagrama del sistema")
 
