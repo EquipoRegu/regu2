@@ -2,55 +2,35 @@
 $(function () {
     const socket = io();
 
-    let turno = 0;
     let tablero = [];
-    const resultado = $('#resultado');
+    let temp = 0;
 
     const btnPulsado = (e, pos) => {
         const btn = e.target;
-        if (btn.style.backgroundColor) {
-            console.log("Pulsa otra casilla")
-        } else {
-
-            turno++;
-            const color = turno % 2 ? 'salmon' : 'palegreen';
-            btn.style.backgroundColor = color;
-            tablero[pos] = color;
-            console.log(turno);
-            console.log(pos, tablero)
-            console.log(haGanado())
-            
-            if(haGanado() == true){
-                resultado.append(`<div class="msg-area mb-2" style="background-color:${color}"><p><b>Felicidades jugador </b>: ${color}</p></div>`);
-                turno = 0;
-                tablero = [];
+            if (temp == 0) {
+                const color = 'white';
+                btn.style.backgroundColor = color;
+                tablero[pos] = color;
+                tablero[pos] = 1;
+            } else if (temp == 1) {
+                const color = 'black';
+                btn.style.backgroundColor = color;
+                tablero[pos] = color;
+            } else if (temp == 2) {
+                const color = 'salmon';
+                btn.style.backgroundColor = color;
+                tablero[pos] = color;
+            } else if (temp == 3) {
+                const color = 'palegreen';
+                btn.style.backgroundColor = color;
+                tablero[pos] = color;
+            } else if (temp == 4) {
+                temp = -1;
             }
-        }
-    }
-
-    const haGanado = () => {
-        if (tablero[0] == tablero[1] && tablero[0] == tablero[2] && tablero[0]) {
-            return true;
-        } else if (tablero[3] == tablero[4] && tablero[3] == tablero[5] && tablero[3]) {
-            return true;
-        } else if (tablero[6] == tablero[7] && tablero[6] == tablero[8] && tablero[6]) {
-            return true;
-        } else if (tablero[0] == tablero[3] && tablero[0] == tablero[6] && tablero[0]) {
-            return true;
-        } else if (tablero[1] == tablero[4] && tablero[1] == tablero[7] && tablero[1]) {
-            return true;
-        } else if (tablero[2] == tablero[5] && tablero[2] == tablero[8] && tablero[2]) {
-            return true;
-        } else if (tablero[0] == tablero[4] && tablero[0] == tablero[8] && tablero[0]) {
-            return true;
-        } else if (tablero[2] == tablero[4] && tablero[2] == tablero[6] && tablero[2]) {
-            return true;
-        }
-        return false;
+            temp = temp+1;
     }
 
     document.querySelectorAll('#gato').forEach(
         (obj, i) => obj.addEventListener('click', (e) => btnPulsado(e, i))
     );
-
 });
