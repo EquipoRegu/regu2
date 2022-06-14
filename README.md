@@ -11,7 +11,7 @@
 
 ![Sistema 1](https://github.com/EquipoDinamit/Examen3/blob/main/imagenes/indicaciones.png "Diagrama del sistema")
 
-El sistema se compone de tres módulos o bloques independientes que interactúan entre sí. Dos de los tres módulos son clientes, un <b>cliente emisor</b> (controlado por hardware), un <b>cliente receptor</b> (página web con html) y el <b>servidor</b> que permite la comunicación entre los dos clientes para que sea posible mover objetos o realizar diferentes acciones en la página web con la información que envía el emisor.
+El sistema se compone de tres módulos o bloques independientes que interactúan entre sí. Dos de los tres módulos son clientes, un <b>cliente emisor</b> (controlado por hardware), un <b>cliente receptor</b> (página web con html) y el <b>servidor</b> que permite la comunicación entre los dos clientes para que sea posible mover objetos para que sea posible llevar a cabo una partida del juego llamado "Gato".
 </div>
 
 <div align="right">
@@ -19,25 +19,7 @@ El sistema se compone de tres módulos o bloques independientes que interactúan
 <sub>[Contenido](#-)</sub>
 </div> 
 
-# Cliente emisor 
-
-### Circuito
-<div align="justify">
-Los materiales que se utilizaron son: <br>
-<ul>
- <li>Arduino uno.</li>
- <li>8 resistenciias de 1k ohms.</li>
- <li>1 Protoboard.</li>
- <li>7 Push buttos.</li>
-</ul>
-
-A continuacion armar el circuito de la imagen.
-
-<img src="https://github.com/EquipoDinamit/Examen3/blob/main/imagenes/CircuitoEmisor.png" alt="Circuito Emisor" style="height: 100%; width:100%;"/>
-
-Los botones tienen asignados los números del 1 al 6 y el 13, además, cada botón con su respectivo número tiene una función diferente en el cliente receptor como se muestra en la imagen.
-</div>
- 
+# Cliente emisor
 ### Código
 <div align="justify">
 <b>Emisor.ino:</b> 
