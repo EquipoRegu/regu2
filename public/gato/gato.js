@@ -13,7 +13,7 @@ $(function () {
                 tablero[pos] = color;
                 tablero[pos] = 1;
             } else if (temp == 1) {
-                const color = 'black';
+                const color = 'gray';
                 btn.style.backgroundColor = color;
                 tablero[pos] = color;
             } else if (temp == 2) {
